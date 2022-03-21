@@ -4,14 +4,14 @@ import {StyleSheet} from 'react-native'
 
 export const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        /* flex: 1, */
     },
     card: {
-        flex: 1,
-        flexGrow: 0.42,
+        /* flex: 1, */
+        /* flexGrow: 0.42, */
         justifyContent: 'center',
-        marginHorizontal: 50,
-        marginTop: margin.xl,
+        marginHorizontal: margin.xxl,
+        marginTop: margin.l,
         shadowColor: colors.shadowColor,
         shadowOffset: {
             width: 0,
@@ -20,5 +20,7 @@ export const styles = StyleSheet.create({
         shadowOpacity: 0.2,
         shadowRadius: 1.4,
         elevation: 2,
+        backgroundColor: '#fff',
+        borderRadius: 5,
     },
 })

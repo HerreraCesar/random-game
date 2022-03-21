@@ -8,6 +8,7 @@ export const colors = {
     primaryBackground: '#fff',
     secondaryBackground: '#52528C',
     shadowColor: '#000',
+    placeholderColor: '#B0A3D4'
 }
 
 export const fontSize = {
@@ -26,7 +27,7 @@ export const padding = {
 
 export const margin = {
     s: 10,
-    medium: 20,
+    m: 20,
     l: 30,
     xl: 40,
     xxl: 50,

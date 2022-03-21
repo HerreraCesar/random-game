@@ -1,44 +1,50 @@
-import {StyleSheet} from 'react-native'
+import { colors, fontSize, margin, padding } from '../../constants/theme'
+
+import { StyleSheet } from 'react-native'
 
 export const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        height: 'auto'
+        /* flex: 1, */
     },
     cardTitle: {
-        fontSize: 20,
+        fontSize: fontSize.title,
         fontWeight: 'bold',
         textAlign: 'center',
-        marginVertical: 20,
-        color: '#212121',
+        marginVertical: margin.l,
+        color: colors.primaryTitle,
     },
     inputContainer: {
-        flex: 1,
-        flexGrow: 0.6,
+        /* flex: 1, */
+        /* flexGrow: 0.8, */
         marginHorizontal: 20,
-    },
-    input: {
-        borderBottomColor: '#52528C',
-        borderBottomWidth: 1,
-        color: '#52528C',
-        marginVertical: 10,
-        fontSize: 30,
-        alignSelf: 'center',
     },
     label: {
         fontSize: 16,
-        fontWeight: 'bold',
+        /* fontWeight: 'bold', */
         color: '#212121',
-        marginBottom: 5,
-        marginTop: 10,
+        /* marginBottom: 5, */
+        /* marginTop: 10, */
         justifyContent:'center',
         alignSelf: 'center',
     },
     buttonsContainer: {
-        flex: 1,
-        flexGrow: 0.18,
+        /* flex: 1, */
+        /* flexGrow: 0.18, */
         flexDirection: 'row',
         justifyContent: 'space-evenly',
-        marginHorizontal: 20,
-        marginBottom: 10,
-    }
+        marginHorizontal: margin.l,
+        marginBottom: margin.l,
+    },
+    confirmedText: {
+        fontSize: fontSize.title,
+        fontWeight: 'bold',
+        color: colors.primary,
+        justifyContent: 'center',
+        alignSelf: 'center',
+    },
+    containerConfirmed: {
+        marginVertical: margin.m,
+        justifyContent: 'center'
+    },
 })
