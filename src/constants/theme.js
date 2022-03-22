@@ -1,34 +1,39 @@
 export const colors = {
-    primary: '#52528C',
-    secondary: '#fff',
-    primaryTitle: '#000000',
-    secondaryTitle: '#212121',
-    primaryText: '#212121',
-    secondaryText: '#fff',
-    primaryBackground: '#fff',
-    secondaryBackground: '#52528C',
-    shadowColor: '#000',
-    placeholderColor: '#B0A3D4'
+  primary: '#9E183F',
+  secondary: '#6C9F72',
+  dark: '#262626',
+  light: '#FFFFFF',
+  shadow: '#000000',
+  placeholder: '#e3e3e3',
+};
+
+export const fontFamily = {
+  thin: 'Montserrat-Thin',
+  regular: 'Montserrat-Regular',
+  bold: 'Montserrat-Bold',
+  black: 'Montserrat-Black',
 }
 
 export const fontSize = {
-    title: 20,
-    text: 16,
-    button: 18,
-}
+  s: 12,
+  m: 16,
+  l: 24,
+  xl: 32,
+  xxl: 44,
+};
 
 export const padding = {
-    s: 10,
-    m: 20,
-    l: 30,
-    xl: 40,
-    xxl: 50,
-}
+  s: 10,
+  m: 20,
+  l: 30,
+  xl: 40,
+  xxl: 50,
+};
 
 export const margin = {
-    s: 10,
-    m: 20,
-    l: 30,
-    xl: 40,
-    xxl: 50,
-}
+  s: 10,
+  m: 20,
+  l: 30,
+  xl: 40,
+  xxl: 50,
+};

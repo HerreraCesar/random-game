@@ -1,31 +1,35 @@
-import { colors, fontSize, margin } from '../../constants/theme'
+import { colors, fontFamily, fontSize, margin, padding } from '../../constants/theme';
 
-import { StyleSheet } from 'react-native'
+import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-    container: {
-        /* flex:1, */
-    },
-    confirmedText: {
-        fontSize: fontSize.title,
-        fontWeight: 'bold',
-        color: colors.primary,
-        justifyContent: 'center',
-        alignSelf: 'center',
-    },
-    buttonsContainer: {
-        /* flex: 1, */
-        /* flexGrow: 0.18, */
-        flexDirection: 'row',
-        justifyContent: 'space-evenly',
-        marginHorizontal: margin.l,
-        marginBottom: margin.l,
-    },
-    cardTitle: {
-        fontSize: 16,
-        fontWeight: 'bold',
-        textAlign: 'center',
-        marginVertical: margin.l,
-        color: colors.primaryTitle,
-    },
-})
+  confirmedText: {
+    fontFamily: fontFamily.bold,
+    fontSize: fontSize.xl,
+    color: colors.dark,
+    marginBottom: margin.l,
+    justifyContent: 'center',
+    alignSelf: 'center',
+  },
+  buttons: {
+    flexDirection: 'row',
+    marginBottom: margin.m,
+    marginHorizontal: margin.m,
+    justifyContent: 'space-evenly',
+  },
+  buttonContainer: {
+    flex: 1,
+    margin: 10,
+  },
+  buttonBack: {
+    marginHorizontal: margin.xxl,
+    marginTop: margin.xl,
+  },
+  cardTitle: {
+    fontFamily: fontFamily.bold,
+    fontSize: fontSize.l,
+    color: colors.secondary,
+    marginVertical: margin.l,
+    textAlign: 'center',
+  },
+});

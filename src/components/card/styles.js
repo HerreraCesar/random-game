@@ -1,26 +1,21 @@
-import {colors, margin} from '../../constants/theme'
+import { colors, fontFamily, fontSize, margin, padding } from '../../constants/theme';
 
-import {StyleSheet} from 'react-native'
+import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-    container: {
-        /* flex: 1, */
+  card: {
+    marginHorizontal: margin.xxl,
+    marginTop: margin.l,
+    backgroundColor: colors.light,
+    shadowColor: colors.shadow,
+    shadowOffset: {
+      width: 0,
+      height: 1,
     },
-    card: {
-        /* flex: 1, */
-        /* flexGrow: 0.42, */
-        justifyContent: 'center',
-        marginHorizontal: margin.xxl,
-        marginTop: margin.l,
-        shadowColor: colors.shadowColor,
-        shadowOffset: {
-            width: 0,
-            height: 1,
-        },
-        shadowOpacity: 0.2,
-        shadowRadius: 1.4,
-        elevation: 2,
-        backgroundColor: '#fff',
-        borderRadius: 5,
-    },
-})
+    shadowOpacity: 0.2,
+    shadowRadius: 1.4,
+    elevation: 2,
+    justifyContent: 'center',
+    borderRadius: 5,
+  },
+});
