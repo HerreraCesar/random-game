@@ -4,8 +4,8 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   card: {
-    marginHorizontal: margin.xxl,
-    marginTop: margin.l,
+    marginHorizontal: margin.l,
+    marginBottom: margin.l,
     backgroundColor: colors.light,
     shadowColor: colors.shadow,
     shadowOffset: {

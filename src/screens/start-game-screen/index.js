@@ -2,6 +2,7 @@ import {
   Button,
   Keyboard,
   KeyboardAvoidingView,
+  ScrollView,
   Text,
   TouchableWithoutFeedback,
   View,
@@ -14,7 +15,7 @@ import Input from '../../components/input';
 import {colors} from '../../constants/theme';
 import {styles} from './styles';
 
-const StartGameScreen = ({ onStartGame }) => {
+const StartGameScreen = ({onStartGame}) => {
   const [inputValue, setInputValue] = useState('');
   const [confirmed, setConfirmed] = useState(false);
   const [selectedNumber, setSelectedNumber] = useState('');
@@ -52,8 +53,8 @@ const StartGameScreen = ({ onStartGame }) => {
 
   return (
     <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
-      <KeyboardAvoidingView behavior="padding" style={styles.container}>
-        <View style={styles.container}>
+      <ScrollView style={styles.container}>
+        <KeyboardAvoidingView behavior="padding" style={styles.container}>
           <Header title="Adivina el número" />
           <Card>
             <Text style={styles.cardTitle}>Empezar juego</Text>
@@ -93,8 +94,8 @@ const StartGameScreen = ({ onStartGame }) => {
             </View>
           </Card>
           {confirmedOutput}
-        </View>
-      </KeyboardAvoidingView>
+        </KeyboardAvoidingView>
+      </ScrollView>
     </TouchableWithoutFeedback>
   );
 };

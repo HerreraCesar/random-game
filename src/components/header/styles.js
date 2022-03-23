@@ -5,9 +5,10 @@ import {StyleSheet} from 'react-native';
 export const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.primary,
-    height: 150,
+    height: 140,
     justifyContent: 'center',
     alignItems: 'center',
+    marginBottom: margin.l,
   },
   title: {
     fontFamily: fontFamily.black,

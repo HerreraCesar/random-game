@@ -3,28 +3,32 @@ import { colors, fontFamily, fontSize, margin, padding } from '../../constants/t
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-  buttons: {
-    flexDirection: 'row',
-    marginBottom: margin.m,
-    marginHorizontal: margin.m,
-    justifyContent: 'space-evenly',
+  container: {
+    flex: 1,
+  },
+  image: {
+    width: '100%',
+    height: 300,
+  },
+  cardContainer: {
+    marginTop: margin.l,
   },
   buttonContainer: {
     flex: 1,
-    margin: margin.s,
+    marginHorizontal: margin.l,
   },
   cardTitle: {
     fontFamily: fontFamily.bold,
-    fontSize: fontSize.l,
+    fontSize: fontSize.xl,
     color: colors.secondary,
     marginVertical: margin.l,
     textAlign: 'center',
   },
   confirmedText: {
-    fontFamily: fontFamily.bold,
-    fontSize: fontSize.xl,
+    fontFamily: fontFamily.regular,
+    fontSize: fontSize.m,
     color: colors.dark,
-    marginBottom: margin.l,
+    marginTop: margin.l,
     justifyContent: 'center',
     alignSelf: 'center',
   },
